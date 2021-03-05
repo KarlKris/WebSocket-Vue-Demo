@@ -6,12 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node build/build.js",
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js"
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "proto": "pbjs -t static-module -w commonjs -o src/proto/proto.js src/proto/*.proto"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^9.8.6",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
@@ -19,6 +21,8 @@
     "css-loader": "^4.2.1",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
+    "postcss-loader": "^3.0.0",
+    "protobufjs": "^6.10.1",
     "vue-loader": "^15.9.3",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.12",
